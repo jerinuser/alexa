@@ -4,7 +4,7 @@ import numpy as np
 import os
 from matplotlib import pyplot as plt
 
-app = Flask(__name__)
+ app = Flask(__name__)
 UPLOAD_FOLDER = "uploads"
 RESULT_FOLDER = "results"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
