@@ -4,7 +4,7 @@ import numpy as np
 import os
 from matplotlib import pyplot as plt
 
-app = Flask(__name__)
+ app = Flask(__name__)
 UPLOAD_FOLDER = "uploads"
 RESULT_FOLDER = "results"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
@@ -14,7 +14,7 @@ app.config["RESULT_FOLDER"] = RESULT_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)
 
-
+print("for testing purpose")
 def create_sketch(image_path, output_path):
     # Read the image
     image = cv2.imread(image_path)
