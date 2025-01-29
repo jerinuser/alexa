@@ -14,7 +14,7 @@ app.config["RESULT_FOLDER"] = RESULT_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)
 
-
+print("for testing purpose")
 def create_sketch(image_path, output_path):
     # Read the image
     image = cv2.imread(image_path)
