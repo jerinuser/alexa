@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Assistant</title>
+    <title>Upload Image</title>
 </head>
 <body>
-    <h1>Flask Voice Assistant</h1>
-    <form method="POST">
-        <button type="submit" name="command">Start Listening</button>
+    <h1>Upload an Image to Generate a Sketch</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Upload and Process</button>
     </form>
-    {% if output %}
-        <h3>Response:</h3>
-        <p>{{ output }}</p>
-    {% endif %}
 </body>
 </html>
